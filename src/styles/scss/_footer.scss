@@ -1,0 +1,25 @@
+//-------------------importation des variables-------------------------
+@import"../variables";
+//-------------------importation des mixins----------------------------
+@import"../mixins";
+
+.footer__contenair{
+  @include flex-colomn-center;
+  background-color:$footer-color;
+  height: 209px; 
+  bottom:0;
+
+  &__text{
+    @include flex-text;
+    color:$tertiary-color;
+    @include font(24px, 500);
+    height:46px;
+  
+    @media screen and(max-width:768px){ 
+      @include font(12px, 500);
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+}

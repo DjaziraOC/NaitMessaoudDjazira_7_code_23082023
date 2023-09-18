@@ -1,0 +1,90 @@
+//-------------------importation des variables-------------------------
+@import"../variables";
+//-------------------importation des mixins----------------------------
+@import"../mixins";
+
+.contenaireNotFound{
+    position: relative;
+    bottom: 0px;
+    @media screen and(max-width:768px){
+        bottom: 0px;
+    } 
+}
+.notFound__contenaire{
+    display: flex;
+    color: $primary-color;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+    
+    &__number{
+        display: flex;
+        align-items:center;
+        height: 263px; 
+        margin-top: 169px;
+        @include font(288px, 700);
+        line-height: 411.69px;
+        letter-spacing: 0em;
+        text-align: center; 
+        @media screen and (max-width:768px){
+            width: 198px;
+            height: 99px;
+            margin-top: 195px;
+            margin-left: 88px;
+            margin-right: 88px;
+            @include font(96px,700);
+            line-height: 137px;
+            letter-spacing: 0em;
+            text-align: center;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            @include font(260px, 700);
+        }
+    }
+    &__text{
+        display: flex;
+        height: 51px;
+        margin-top: 66px;
+        @include font(36px, 500);
+        line-height: 51.34px;
+        letter-spacing: 0em;
+        text-align: left; 
+        @media screen and(max-width:768px){  
+            width: 260px;
+            height: 52px;
+            margin-top: 11px;
+            margin-right: 57px;
+            margin-left: 57px;
+            @include font(18px, 500); 
+            line-height: 26px;
+            letter-spacing: 0em;
+            text-align:center;
+        } 
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            @include font(30px, 500);
+        }   
+    }
+    &__link{
+        color: $primary-color;
+        height: 26px;
+        margin-top:182px;
+        @include font(18px, 500);
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        @media screen and(max-width:768px){ 
+            width: 221px;
+            height: 20px;
+            margin-top:133px;  
+            margin-left: 76px;
+            margin-right: 76px;
+            @include font(14px, 500);  
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;                    
+        }
+    }
+}
+
+ 

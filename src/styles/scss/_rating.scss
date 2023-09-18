@@ -1,0 +1,36 @@
+//-------------------importation des variables-------------------------
+@import"../variables";
+//-------------------importation des mixins----------------------------
+@import"../mixins";
+
+.contenair__rating{
+    display: flex;
+    justify-content: flex-end;
+    width: 196px;
+    margin-top:20px; 
+
+    @media screen and(max-width: 768px){
+        display: flex;
+        justify-content:flex-start;
+        width: 98px;
+    }
+    
+    &__emptyStar,
+    &__fullStar{      
+        margin-right: 10px;
+        
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            height:24px ;
+            width: 24.41px;
+        }
+        @media screen and(max-width: 768px){
+            height:13px ;
+            width: 13.41px; 
+        }
+        @media screen and(max-width: 320px){
+            height:13px ;
+            width: 13.41px;
+            margin-right: 2%;
+        }
+    }
+}

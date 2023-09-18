@@ -1,0 +1,78 @@
+//-------------------importation des variables-------------------------
+@import"../variables";
+//-------------------importation des mixins----------------------------
+@import"../mixins";
+
+.contenairStyles {
+    height:415px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    @media screen and(max-width: 768px){
+        height:255px;
+        margin-top:20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+// créer le style de slider et des slide
+.sliderStyles {
+    height:100%;
+}
+// créer le style des slides
+.slideStyles {
+    position: relative;
+    height:100%;
+    width:100%;
+    @include big-radius;
+    background-size:cover;
+    background-position:100%;
+
+    @media screen and(max-width: 768px){
+        @include small-radius;   
+    }
+}
+
+//--------------2-style pour ArrowStyles--------------------
+.leftArrowStyles{
+    position:absolute;
+    transform:translate(0,130%);
+    z-index: 22;
+    cursor:pointer;
+    @media screen and(max-width: 768px){
+        width: 24px;
+        height: 24px;
+        transform:translate(0,500%);
+        left: 20px;  
+    }
+}
+.rightArrowStyles{
+    position:absolute;
+    right:40px;
+    transform:translate(0,130%);
+    z-index: 22;
+    cursor:pointer;
+    @media screen and(max-width:768px){
+        width: 24px;
+        height: 24px;
+        transform:translate(0,500%);
+        right:20px;   
+    }
+}
+//--------------3-1-style pour le span --------------------
+.spanStyle {
+  position:absolute;
+  color: $tertiary-color;
+  border:2px;
+  width:24px;
+  height:32.4px;
+  top:450px;
+  bottom: 0px;
+  left:50%;
+  @include font(18px,500);
+  line-height:25.67px ;
+  text-align:center;
+  @media screen and(max-width: 768px){
+    display:none;
+  }
+}

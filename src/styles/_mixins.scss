@@ -1,0 +1,40 @@
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+//--------------------------------**border-radius**------------------------------------
+@mixin big-radius {
+    border-radius: 25px;
+}
+@mixin small-radius {
+    border-radius: 10px;
+}
+//-------------------------------------**Flex**-----------------------------------------
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-space-between {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin flex-colomn-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-text {
+    display: flex;
+    align-items: center;
+}
+//-------------------------------------**font**-----------------------------------------
+@mixin font($size, $weight) {
+    font-size: ($size);
+    font-family: Montserrat;
+    font-weight: $weight;
+}

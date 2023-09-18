@@ -1,0 +1,30 @@
+.host__container{   
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    margin-right: 0px;
+    
+    @media screen and(max-width: 336px){
+        margin-top:5%; 
+    }
+    &__name{
+        width: 93px;
+        height: 52px;
+        text-align: right;
+        color: $primary-color;
+        
+    }
+    P{
+        margin: 0;
+        @include font(18px,500);
+    }
+    &__img{
+        margin: 5px;
+    }
+    img{
+        object-fit: cover;
+        clip-path:ellipse(50% 50%);
+        width: 64px;
+        height: 64px;
+    }
+}

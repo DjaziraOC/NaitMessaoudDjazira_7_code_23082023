@@ -1,0 +1,31 @@
+//-------------------importation des variables-------------------------
+@import"../variables";
+//-------------------importation des mixins----------------------------
+@import"../mixins";
+
+.aboutBanner{
+    height: 223px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom:40px;
+    margin-right: 40px;
+    @media screen and(max-width: 768px){ 
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-right: 20px;
+        @include  small-radius;
+    } 
+    &_img{
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        @include big-radius;
+        object-fit: cover;
+        @media screen and(max-width: 768px){ 
+            @include  small-radius;
+            width: 100%;
+        }
+    }   
+}
+
+
