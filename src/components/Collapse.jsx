@@ -3,16 +3,15 @@
 // le composant Collapse permet de déplier et plier des contenus en faisant disparaitre
 // le texte et le style au clic.
 
-// Pour avoir ce résultats on a définit deux fonctions: 
+// Pour avoir ce résultats on a définit la fonction: 
 // 1-->la fonction toggleState permet de gérer la valeur de plie au clic: quand on clique 
 // sur le bouton.
 // on fait appel à la fonction toggleState qui modifie la valeur setOpen au clic, si 
 // le state 'isOpen' est false, elle va prend une valeur true et si le state 'isOpen' 
 // est true, toggleState va prendre la valeur false. 
 
-// 2-->le hook useEffect permet de définir la hauteur du collapse déplié 'setHeightEl', il 
-// s'éxécute au montage du composant, il définit la hauteur du collapse  déplié  lors 
-// de sa première ouverture et la conserve dans refHeight au niveau de la div 
+// 2-->la hauteur du collapse déplié' est définit automatiquement lors 
+// de sa première ouverture et le style est appliqué au niveau de la div 
 // qui contient le texte à basculer (children)
 
 //-------------------------------------**Collapse**------------------------------------  
@@ -36,27 +35,7 @@ function Collapse(props) {
   console.log(isOpen) //{true or false}
   
 //----------------------------------**hauteur de toggle**-------------------------------------- 
-  // //--->Définir le state de la hauteur du collapse
-  // const[heightEl,setHeightEl] = useState ()
 
-  // //--->récupération et  et conservation de la valeur de hauteur du collapse déplié
-  // const refHeight =  useRef() 
-  
-
-
-  //--->définir une hauteur de collaps à son ouverture
-  // const height = refHeight.current.scrollHeight
-  //---> la hauteur du collapse  déplié 
-  //useEffect s'éxécute au montage du composant, dans ce cas, il définit la hauteur du 
-  //collapse  déplié lors de sa première ouverture et la conserve dans refHeight
-  /*lorsque le composant renvoie une réponse,et tout est construit, on va lui rajouter 
-  //une hauteur setHeightEl, on va lui définir une hauteur de ref au niveau de la div 
-  //accordion__toggle qui contient le texte à basculer (children)*/
-  // useEffect (() =>{
-  //   console.log(refHeight) // un objet 
-  //     setHeightEl(`${refHeight.current?.scrollHeight}px`)
-  //     // setHeightEl(`${refHeight.current.scrollHeight}px`)
-  // },[])
     return ( 
       // affiche le collapse replié par défaut et l'ouvre au clic puis le referme au clic en faisant disparaitre le texte et le style
         <div className='accordion'>
@@ -71,9 +50,8 @@ function Collapse(props) {
             />
           </button>
           <div
-            // ref={refHeight}
             className= {isOpen? "accordion__toggle animated" : "accordion__toggle"} //si open est true: "le contenus dépliés" donc on lance l'animation, si false le contenus pliés (on passe à m'état initial) 
-            style={{height: isOpen ? "auto" : "0px" }}//si open est true on lui attribuer une hauteur heightEl et si open est false la hauteur est 0 px 
+            style={{height: isOpen ? "auto" : "0px" }}//si open est true on lui attribuer une hauteur auto et si open est false la hauteur est 0 px 
             >
               <div className='accordion__toggle__text' >
                 {props.aboutText}
@@ -87,6 +65,3 @@ function Collapse(props) {
 
 export default Collapse
 
-//pour le commentaire
-
-// https://www.thecodeforge.io/post/react-get-the-height-or-width-of-an-element
