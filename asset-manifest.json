@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NaitMessaoudDjazira_7_code_23082023/static/css/main.6f27f23c.css",
-    "main.js": "/NaitMessaoudDjazira_7_code_23082023/static/js/main.f916e71e.js",
+    "main.js": "/NaitMessaoudDjazira_7_code_23082023/static/js/main.03a14e5a.js",
     "static/media/mobileBackgroundAbout.svg": "/NaitMessaoudDjazira_7_code_23082023/static/media/mobileBackgroundAbout.28a413defc0781e02573277d5cae6491.svg",
     "static/media/backgroundBanner.png": "/NaitMessaoudDjazira_7_code_23082023/static/media/backgroundBanner.f70dc01e2d4986bc81ef.png",
     "static/media/LogoHeader.svg": "/NaitMessaoudDjazira_7_code_23082023/static/media/LogoHeader.28bcdc5933dc39a590d83eb2133ce13c.svg",
@@ -13,10 +13,10 @@
     "static/media/arrow_back.svg": "/NaitMessaoudDjazira_7_code_23082023/static/media/arrow_back.3529f3989e39b758930113b6f7a3d1d4.svg",
     "static/media/arrow_forward.svg": "/NaitMessaoudDjazira_7_code_23082023/static/media/arrow_forward.20f8ff01b05f9ea0cf55933722f7806c.svg",
     "main.6f27f23c.css.map": "/NaitMessaoudDjazira_7_code_23082023/static/css/main.6f27f23c.css.map",
-    "main.f916e71e.js.map": "/NaitMessaoudDjazira_7_code_23082023/static/js/main.f916e71e.js.map"
+    "main.03a14e5a.js.map": "/NaitMessaoudDjazira_7_code_23082023/static/js/main.03a14e5a.js.map"
   },
   "entrypoints": [
     "static/css/main.6f27f23c.css",
-    "static/js/main.f916e71e.js"
+    "static/js/main.03a14e5a.js"
   ]
 }
