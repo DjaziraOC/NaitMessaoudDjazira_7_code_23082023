@@ -3,13 +3,13 @@
 // le composant "Housting" permet d'afficher plus d'information et de détails sur le logement
 //  à louer 
 
-// On importe le le fichier logements.json contenant le  tableau contenant plusieur objet.
-// avec la méthode find on séléctionne à partir de tableau data un seul objet à l'aide de son 
-// id récupéré grâce useParams()
+// On importe le le fichier logements.json contenant  plusieur objet.
+// avec la méthode find on séléctionne un seul objet à partir de ce tableau 'DataLogement' 
+//à l'aide de son id récupéré grâce useParams()depuis l'url de connexion 
+// entre la page home et la page Housting 
 
 // avac la méthode map() on peut facilement d'itérer sur des données et de retourner
 // un tableau d'éléments.
-// en cas
 
 // Ce composant contient d'autre composants enfants et chaque composant  gère une partie de composant
 // parent, on a :
@@ -49,7 +49,6 @@ function HoustingPage() {
         navigate("/404", { state:{ message: "Api is not working" }}); 
     }
 // 
-// à supprimer
 //---Title-------------------------------------------------------------------------------------
     const title =product?.title
     console.log('title')

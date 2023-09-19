@@ -41,7 +41,7 @@ function Collapse(props) {
         <div className='accordion'>
           <button onClick={toggleState} className='accordion__visible'>
             <span>
-              {props.aboutTitle}
+                  {props.aboutTitle}
             </span> 
             <img //animation de chevron si isOpen est true on active sinon rien (si false on aura désactiver  )
               className={isOpen?'active':'desactiver'} //  {/* className={isOpen && 'active'} */}

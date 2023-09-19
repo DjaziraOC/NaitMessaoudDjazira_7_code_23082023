@@ -3,7 +3,7 @@
 // s'effectuer dans le fichier App.js.
 
 // pour pouvoir ajouter une route vers les composants, il faut le composant BrowserRouter
-// Il suffira d'envelopper les composants de pages à l'intérieur de BrowserRouter. 
+// Il suffira d'envelopper les composants de pages à l'intérieur de HashRouter. 
 // Cela permet à tous les composants de la page de bénéficier de la logique de routage.
 
 // Le composant Router dispose d'une prop path  qui accepte le chemin de la page sélectionnée (url)
