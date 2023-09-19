@@ -10,7 +10,7 @@
 // et le composant de la page doit être enveloppé par le routeur.
 
 //---------------------------**Importation des Composants**-----------------------------
-import { Routes,Route, BrowserRouter} from "react-router-dom";
+import { Routes,Route, HashRouter,Navigate} from "react-router-dom";
 import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
 import Housting from "./pages/Housting";
@@ -21,19 +21,19 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div id="App">
-      <BrowserRouter>
+      <HashRouter>
         <Header/>
           <main>
             <Routes>
-                {/* <Route path='/'element={<Navigate replace to='/home'/>} /> */}
-                <Route path='/' element={<HomePage/>}/>
+                <Route path='/' element={<Navigate replace to='/home' />} />
+                <Route path='/home' element={<HomePage/>}/>
                 <Route path='/housting/:id' element={<Housting/>}/> 
                 <Route path='/about' element= {<AboutPage/>}/>
                 <Route path='*'element={<ErrorPage/>}/> 
             </Routes>
           </main>
         <Footer/> 
-      </BrowserRouter> 
+      </HashRouter> 
     </div>
   );
 }
