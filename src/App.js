@@ -26,8 +26,8 @@ function App() {
           <main>
             <Routes>
                 <Route path="/" element={<HomePage/>}/>
-                <Route path='housting/:id' element={<Housting/>}/> 
-                <Route path='/:id' element= {<AboutPage/>}/>
+                <Route path='/housting/:id' element={<Housting/>}/> 
+                <Route path='/about' element= {<AboutPage/>}/>
                 <Route path="*" element={<ErrorPage/>}/>    
             </Routes>
           </main>
