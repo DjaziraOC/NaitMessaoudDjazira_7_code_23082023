@@ -1,4 +1,4 @@
-## KASA *Créez une application web de location immobilière avec React*
+### KASA *Créez une application web de location immobilière avec React*
 
 Projet n°7 du parcours [développeur web chez OpenClassrooms](https://openclassrooms.com/fr/paths185-developpeur-web#path-tabs)
 
@@ -20,7 +20,7 @@ et de développer l’ensemble de l’application, les composants React, les rou
 
 
 ## Contraintes techniques : 
-Tu trouveras les coding guidelines de Kasa [ici](https://course.oc-static.com/projects/Front-End+V2/P9+React+1/Coding+guidelines+Kasa+FR.pdf)
+Les coding guidelines de Kasa [ici](https://course.oc-static.com/projects/Front-End+V2/P9+React+1/Coding+guidelines+Kasa+FR.pdf)
 
 
 ## Contraintes fonctionnelles
@@ -45,13 +45,13 @@ Inversement, si le Collapse est fermé, un clic permet de l'ouvrir.
    * Git/GitHub
 
 ## Contenus de ce repository
-* 
-* 
+
 ## Tourner le Frontend
-- [x] 
+- le projet est réalisé avec[Create React App](https://github.com/facebook/create-react-app).
 - [x] Exécuter `npm install node-sass` pour installer sass.
 - [x] pour lancer le serveur : `$ npm run start` ou `$ ng serve`
 - [x] Se connecter à l'url: `http://localhost:3000/`http://localhost:3000/
+- [x] Exécuter `npm run build`pour déployer l'application
 
 ## Connexion
 - [x] Ouvrir [localhost:3000](http://localhost:4200/) dans le navigateur.
