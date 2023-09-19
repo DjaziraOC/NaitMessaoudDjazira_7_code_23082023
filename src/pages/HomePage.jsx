@@ -16,7 +16,7 @@
 //----------------------------------------**HomePage**----------------------------------------------
 // import React, { useState,  useEffect} from 'react';
 import Banner from '../components/Banner';
-import data from '../datas/logements.json'
+import data from '../datas/logements.json';
 import { Link } from 'react-router-dom';
 
 function HomePage() {

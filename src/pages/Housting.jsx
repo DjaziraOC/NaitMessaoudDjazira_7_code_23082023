@@ -1,9 +1,10 @@
 
 //-----------------------------------**Commentaires**----------------------------------
-// le composant "Apartment" permet d'afficher plus d'information et de détails sur le logement à louer 
+// le composant "Housting" permet d'afficher plus d'information et de détails sur le logement
+//  à louer 
 
-// elle renvoi un tableau data contenant plusieur objet.
-// avec la méthode filter on séléctionne à partir de tableau data un seul objet à l'aide de son 
+// On importe le le fichier logements.json contenant le  tableau contenant plusieur objet.
+// avec la méthode find on séléctionne à partir de tableau data un seul objet à l'aide de son 
 // id récupéré grâce useParams()
 
 // avac la méthode map() on peut facilement d'itérer sur des données et de retourner
@@ -19,9 +20,7 @@
 // Collapse:permet de plier et déplier des contenus.Son option permet d’indiquer 
 // les éventuels contenus dépliés par défaut.
 
-//------------------------------------**Apartment**------------------------------------------
-// import React, { useEffect, useState } from 'react';
-// import axios  from 'axios';
+//------------------------------------**Housting**------------------------------------------
 import {useParams } from 'react-router-dom';//useNavigate,
 import {useNavigate} from 'react-router-dom';
 import Carrousel from '../components/Carrousel'
@@ -29,7 +28,7 @@ import Tag from '../components/Tag';
 import Host from '../components/Host';
 import Rat from '../components/Rat';
 import Collapse from '../components/Collapse';
-import DataFichLogement from "../datas/logements.json"
+import DataLogement from "../datas/logements.json"
 
 function HoustingPage() {
 //------------------------------------**useParams**-----------------------------------------
@@ -42,14 +41,15 @@ function HoustingPage() {
     const {navigate} = useNavigate()
         
 //---> avec la méthode find on séléctionne un objet à l'aide de son id 
-    const product=DataFichLogement.find(item=> item.id===id)
+    const product=DataLogement.find(item=> item.id===id)
     console.log('product')
     console.log(product)
                  
     if(product=== undefined) {
         navigate("/404", { state:{ message: "Api is not working" }}); 
     }
-
+// 
+// à supprimer
 //---Title-------------------------------------------------------------------------------------
     const title =product?.title
     console.log('title')
@@ -61,9 +61,9 @@ function HoustingPage() {
     console.log(location)
 
 //---Carrousel-------------------------------------------------------------------------------------
-    const slideId = product?.pictures
+    const slideSelected = product?.pictures
     console.log('slide')
-    console.log(slideId)
+    console.log(slideSelected)
 
 //---Tag------------------------------------------------------------------------------------- 
     const tags = product.tags
@@ -71,9 +71,9 @@ function HoustingPage() {
     console.log(tags)
 
 //---Host-------------------------------------------------------------------------------------
-    const nameId = product.host?.name
+    const nameSelected = product.host?.name
     console.log('hostname')
-    console.log(nameId)
+    console.log(nameSelected)
 
     const pictureId = product.host?.picture
     console.log('picture')
@@ -99,9 +99,12 @@ function HoustingPage() {
   return (
     product&&(
         <div className='housting__contenaire'>
+
+            {/* Carrousel */}
             <Carrousel  className ='carrousel__contenaire'
-                slides = {slideId}
-            />  
+                slides = {slideSelected}
+            /> 
+            {/* Tag */}
             <div className='contenaire'>
                 <div className='contenaire__information'>
                     <h1 className='contenaire__information__title'>{product?.title} </h1>
@@ -115,16 +118,20 @@ function HoustingPage() {
                         )}  
                     </div>
                 </div>
+
                 <div className='contenaire__visitor'>
+                {/* Host */}
                     <Host className='contenaire__visitor__hosting'
                         hostname={product.host?.name}
                         hostpicture={product.host?.picture}
                     />
+                {/* Rat */}
                     <Rat className='contenaire__visitor__rating'
                         rating={product?.rating} 
                     />
                 </div>
             </div>
+            {/* Collapse */}
             <div className='collapse__contenaire'>
                 <div className='collapse__contenaire__description'> 
                     <Collapse className= 'collapse__contenaire__description'

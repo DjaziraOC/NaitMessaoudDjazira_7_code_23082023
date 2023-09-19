@@ -47,7 +47,7 @@ Inversement, si le Collapse est fermé, un clic permet de l'ouvrir.
 ## Contenus de ce repository
 
 ## Tourner le Frontend
-- le projet est réalisé avec[Create React App](https://github.com/facebook/create-react-app).
+- [x] le projet est réalisé avec[Create React App](https://github.com/facebook/create-react-app).
 - [x] Exécuter `npm install node-sass` pour installer sass.
 - [x] pour lancer le serveur : `$ npm run start` ou `$ ng serve`
 - [x] Se connecter à l'url: `http://localhost:3000/`http://localhost:3000/
@@ -60,7 +60,7 @@ Inversement, si le Collapse est fermé, un clic permet de l'ouvrir.
 
 - [x] Initialiser une application avec Create React App
 - [x] Configurer la navigation entre les pages de l'application avec React Router
-- [x]Développer des éléments de l'interface d'un site web grâce à des composants React
+- [x] Développer des éléments de l'interface d'un site web grâce à des composants React
    
 ## Lien du projet 
 
