@@ -38,7 +38,7 @@ Inversement, si le Collapse est fermé, un clic permet de l'ouvrir.
 
 ## Technologies & outils Utilisés
 - [x] Technologies    
-   * ReactJS 
+   * ReactJS
 - [x] Outils 
    * Figma 
    * Visual Studio Code
@@ -67,4 +67,4 @@ Inversement, si le Collapse est fermé, un clic permet de l'ouvrir.
 - [x] Le code a été versionné sur Git et déployé sur GitHub à l'addresse suivante:[ https://djaziraoc.github.io/NaitMessaoudDjazira_7_code_23082023/]( https://djaziraoc.github.io/NaitMessaoudDjazira_7_code_23082023/)
 
 ## Evaluation
--> Projet à valider
+-> Projet validé 
