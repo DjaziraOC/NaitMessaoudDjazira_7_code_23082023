@@ -1,4 +1,4 @@
-### KASA *Créez une application web de location immobilière avec React*
+## KASA *Créez une application web de location immobilière avec React*
 
 Projet n°7 du parcours [développeur web chez OpenClassrooms](https://openclassrooms.com/fr/paths185-developpeur-web#path-tabs)
 
